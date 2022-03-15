@@ -1,0 +1,21 @@
+<html>
+    <head>
+        <script src="tetris.js"></script>
+    </head>
+    <body onload="load()">
+        <div style="position: absolute;left: 20px;top: 20px;">
+            <h1>テトリスかもしれない</h1>
+            <div style="width: 380px;">
+                Score : <span id="score">0</span>
+            </div>
+        </div>
+        <canvas id="back" width="240" height="440" style="position: absolute; left: 20px;top: 150px;background-color: black;"></canvas>
+        <canvas id="game" width="240" height="440" style="position: absolute; left: 20px;top: 150px;background-color: transparent;"></canvas>
+        <canvas id="next" width="80" height="80"
+            style="position: absolute;left: 300px;top: 150px;background-color: black;"></canvas>
+        <button id="start"
+            style="position: absolute;left: 300px;top: 300px;width: 80px;height: 50px;" onclick="start()">
+            Game<br>Start
+        </button>
+    </body>
+</html>
